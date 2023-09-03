@@ -1,0 +1,103 @@
+/* начало блока Watch  your favorite animal */
+
+
+.animals {
+position:relative;
+background-image: url(/assets/img/jpg_rectangle_32.jpg);
+width: 1922px;
+height: 940px;
+margin: 0 auto;
+box-sizing: border-box;
+ }
+
+
+.animals__title 
+{position: absolute;
+   
+width: 793px;
+height: 208px;
+padding-top: 180px;
+padding-left: 360px;
+
+}
+    .animals__title-title {
+font-size: 89px;
+font-weight: 900;
+line-height: 104px;
+letter-spacing: 0em;
+color: white;
+}
+
+
+
+.animals__cards { 
+position:relative;
+display: grid;
+grid-template-columns: repeat(auto-fill, 20%);
+padding-left: 800px;
+padding-top: 0px;
+}
+.card {
+width: 160px;
+height: 250px;
+
+}
+.animals__card-img{
+  border-radius: 20px;
+  width: 200px;
+height: 250px;}
+.card :hover{
+	  transform: scale(1.2);
+    filter: contrast(110%) brightness(1.2) saturate(1.2);
+	 transition: all 0.2s ease-in;}
+   
+
+ .animals__socials {
+position: absolute;
+display: grid;
+width: 100px;
+height: 107px;
+padding-top: 5px;
+padding-left:200px;
+ }
+ .animals__socials-list {
+ list-style-type: none;}
+ 
+.animals__form {
+position: relative;
+width: 245px;
+height: 55px;
+padding-left: 360px;
+padding-top: 451px;
+
+}
+.search-form__button {
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 245px;
+height: 55px;
+border-radius: 3px;
+background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);}
+
+.search-form__button:hover {
+	 background:rgb(138, 196, 51); }
+
+			.button-icon {
+				width: 32px;
+				height: 32px;
+				padding-right: 5px;
+			}
+
+			.button-text {
+				color: #ffffff;
+				font-family: Roboto;
+				font-size: 18px;
+				font-weight: 900;
+				line-height: 21px;
+				letter-spacing: 0em;
+				text-align: center;
+			}
+
+			/* конец блока Watch  your favorite animal */
