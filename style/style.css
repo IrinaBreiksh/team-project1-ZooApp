@@ -1,3 +1,34 @@
+/* начало шапки header */
+header {
+    width: 100%;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav {
+
+    margin: 0 -30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    justify-self: stretch;
+    flex-grow: 0.7;
+}
+
+#menu {
+    margin: 0 5%;
+    text-decoration: none;
+}
+
+/* конец шапки header */
+
+
 /* начало блока Watch  your favorite animal */
 
 
@@ -101,6 +132,57 @@ background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);}
 			}
 
 			/* конец блока Watch  your favorite animal */
+            /* начало ТРЕТЬЕГО блока "what inspires us?" */
+.inspiration {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "firstText secondText thirdText";
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.firstText {
+    grid-area: firstText;
+    display: flex;
+    width: 23.75rem;
+    height: 13.3125rem;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9375rem;
+    flex-shrink: 0;
+}
+
+.secondText {
+    grid-area: secondText;
+    display: flex;
+    width: 23.75rem;
+    height: 10.3125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9375rem;
+    flex-shrink: 0;
+}
+
+.thirdText {
+    grid-area: thirdText;
+    display: flex;
+    width: 23.75rem;
+    height: 11.3125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9375rem;
+    flex-shrink: 0;
+}
+
+/* конец ТРЕТЬЕГО блока "what inspires us?" */
 						/* начало ПЯТОГО блока "Pay and feed" */
 		
 .pay {
