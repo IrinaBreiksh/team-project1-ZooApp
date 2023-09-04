@@ -9,7 +9,8 @@
   </head>
 
   <body>
-    <header>
+    
+    <header class="header__container" >
       <a href="#"><img class="item" src="assets/img/logo.png" alt="logo" /></a>
       <nav class="item">
         <a id="menu" href="#"> About </a>
@@ -19,58 +20,116 @@
         <a id="menu" href="#"> Design </a>
       </nav>
     </header>
+  
+
     <main>
-      <!-- начало первого блока Watch your favorite animal-->
+
+<!-- начало ПЕРВОГО блока "Watch your favorite animal"-->
+
       <section class="animals">
-        <div class="container">
-          <div class="animals__title">
-            <h1 class="title">
-              Watch your favorite<br />
-              animal online
-            </h1>
-            <button class="button">Watch online</button>
-          </div>
-          <div class="animals__cards">
-            <a href="#" class="card">
-              <img class="card__img" src="" alt="Eagle" />
-            </a>
-
-            <a href="#" class="card">
-              <img class="card__img" src="" alt="Panda" />
-            </a>
-
-            <a href="#" class="card">
-              <img class="card__img" src="" alt="Gorilla" />
-            </a>
-
-            <a href="#" class="card">
-              <img class="card__img" src="" alt="Crocodile" />
-            </a>
-
-            <a href="#" class="card">
-              <img class="card__img" src="" alt="Fox" />
-            </a>
-          </div>
+        <div class="animals__title">
+          <h1 class="animals__title-title">
+            Watch your favorite<br />
+            animal online
+          </h1>
         </div>
-        <ul class="animals__socials">
-          <li>
-            <a href="#">Instagram<img src="instagram" alt="" /></a>
-          </li>
-          <li>
-            <a href="#">Twitter<img src="twitter" alt="" /></a>
-          </li>
-          <li>
-            <a href="#">Youtube<img src="youtube" alt="" /></a>
-          </li>
-          <li>
-            <a href="#">VK<img src="vk" alt="" /></a>
-          </li>
-        </ul>
-      </section>
-      <!-- конец первого блока Watch your favorite animal-->
+        <form class="animals__form">
+          <button class="search-form__button">
+            <img
+              src="assets/img/frame_37.svg"
+              alt="Button Icon"
+              class="button-icon"
+            />
+            <span class="button-text">Watch online</span>
+          </button>
+        </form>
+        <div class="animals__cards">
+          <a href="#" class="card">
+            <img
+              class="animals__card-img"
+              src="assets/img/Eagle.png"
+              alt="Eagle"
+            />
+          </a>
 
-      <!-- начало ТРЕТЬЕГО блока "what inspires us?" -->
-      <section class="inspiration">
+          <a href="#" class="card">
+            <img
+              class="animals__card-img"
+              src="assets/img/Rectangle_14.jpg"
+              alt="Panda"
+            />
+          </a>
+
+          <a href="#" class="card">
+            <img
+              class="animals__card-img"
+              src="assets/img/Gorilla.png"
+              alt="Gorilla"
+            />
+          </a>
+
+          <a href="#" class="card">
+            <img
+              class="animals__card-img"
+              src="assets/img/Crocodile.png"
+              alt="Crocodile"
+            />
+          </a>
+
+          <a href="#" class="card">
+            <img
+              class="animals__card-img"
+              src="assets/img/Fox.png"
+              alt="Fox"
+            />
+          </a>
+        </div>
+        <div class="animals__socials">
+          <ul class="animals__socials-list">
+            <li>
+              <a href="#">
+                <img src="assets/img/instagram (1).svg" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="#"></a><img src="assets/img/twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/img/youtube.svg" alt="Youtube"
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/img/vk.svg" alt="VK" /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+<!-- конец ПЕРВОГО блока "Watch your favorite animal"-->
+
+<!-- начало ВТОРОГО блока "How it works?" -->
+
+<section class="how">
+<h2 class="how__title">How it works?</h2>
+<p>As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat, and we are determined to assist in all aspects, including providing veterinary support and raising much-needed emergency funds. Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy life. They have equal claim to the resources of this planet, and deserve a life of dignity and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+<img class="how__img" src="assets/img/Rectangle_36.jpg" alt="Dears">
+<button class="how__button search-form__button">
+    <img
+      src="assets/img/frame_37.svg"
+      alt="Button Icon"
+      class="button-icon"
+    />
+    <span class="button-text">Watch online</span>
+  </button>
+  </section>
+
+<!-- конец ВТОРОГО блока "How it works?"-->
+
+<!-- начало ТРЕТЬЕГО блока "What inspires us?" -->
+      <section class="inspiration__container">
+        <div class="inspiration">
         <div class="firstText">
           <img src="assets/img/problem-solving.svg" alt="problem-solving" />
           <h3>What inspires us?</h3>
@@ -97,8 +156,33 @@
             dignity and compassion.
           </p>
         </div>
+      </div>
       </section>
-      <!-- конец ТРЕТЬЕГО блока "what inspires us?" -->
+      <!-- конец ТРЕТЬЕГО блока "What inspires us?" -->
+      <!-- начало ПЯТОГО блока "Pay and feed" -->
+      <section class="block-pay">
+        <div>
+          <h2 class="title_style">Pay and feed</h2>
+          <p class="txt_style">
+            The opportunity to easily and naturally (but as often as possible)
+            donate to the needs of animals that you like.
+          </p>
+        </div>
+        <div class="options">
+          <img class="round" src="assets/img/visa_card.svg" alt="visa_card" />
+          <img class="arrow" src="assets/img/arrow_3.svg" alt="arrow" />
+          <img class="round" src="assets/img/zoo_1.svg" alt="zoo" />
+          <img class="arrow" src="assets/img/arrow_3.svg" alt="arrow" />
+          <img class="round" src="assets/img/panda.svg" alt="panda" />
+        </div>
+        <form class="section-button">
+          <button class="search-form__button">
+            <span class="button-text">DONATE</span>
+          </button>
+        </form>
+      </section>
+
+      <!-- конец ПЯТОГО блока "Pay and feed" -->
     </main>
   </body>
 </html>

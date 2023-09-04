@@ -1,50 +1,48 @@
-/* начало шапки header */
+@import url(./fonts.css);
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* начало ШАПКИ header */
+.header__container {
+    max-width: 1616px;
+}
+
 header {
-    width: 100%;
-
-
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
-nav {
-
-    margin: 0 -30px;
-
+.item {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-    justify-self: stretch;
-    flex-grow: 0.7;
 }
 
 #menu {
-    margin: 0 5%;
+    padding: 35px;
     text-decoration: none;
 }
 
-/* конец шапки header */
+/* конец ШАПКИ header */
 
 
-/* начало блока Watch  your favorite animal */
-
-
+/* начало ПЕРВОГО блока "Watch  your favorite animal" */
 .animals {
     position: relative;
-    background-image: url(/assets/img/jpg_rectangle_32.jpg);
-    width: 1922px;
+    background-image: url(/HTML+CSS/team-project1/assets/img/jpg_rectangle_32.jpg);
+    max-width: 1922px;
     height: 940px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
-
 .animals__title {
     position: absolute;
-
     width: 793px;
     height: 208px;
     padding-top: 180px;
@@ -60,8 +58,6 @@ nav {
     color: white;
 }
 
-
-
 .animals__cards {
     position: relative;
     display: grid;
@@ -73,7 +69,6 @@ nav {
 .card {
     width: 160px;
     height: 250px;
-
 }
 
 .animals__card-img {
@@ -82,12 +77,11 @@ nav {
     height: 250px;
 }
 
-.card :hover {
+.card:hover {
     transform: scale(1.2);
     filter: contrast(110%) brightness(1.2) saturate(1.2);
     transition: all 0.2s ease-in;
 }
-
 
 .animals__socials {
     position: absolute;
@@ -103,16 +97,13 @@ nav {
 }
 
 .animals__form {
-    position: relative;
     width: 245px;
     height: 55px;
     padding-left: 360px;
     padding-top: 451px;
-
 }
 
 .search-form__button {
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,31 +129,61 @@ nav {
     font-size: 18px;
     font-weight: 900;
     line-height: 21px;
-    letter-spacing: 0em;
     text-align: center;
 }
 
-/* конец блока Watch  your favorite animal */
-/* начало ТРЕТЬЕГО блока "what inspires us?" */
+/* конец ПЕРВОГО блока "Watch  your favorite animal" */
+
+/* начало ВТОРОГО блока "How it works?"  */
+.how {
+    max-width: 790px;
+    margin: 0 auto;
+}
+
+.how__title {
+    text-align: center;
+    /* font-weight: 900; */
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.how__img {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.how__button {
+    margin: 0 auto;
+    margin-bottom: 155px;
+}
+
+/* конец ВТОРОГО блока "How it works?"  */
+
+/* начало ТРЕТЬЕГО блока "What inspires us?" */
+.inspiration__container {
+    max-width: 1198px;
+    margin: 0 auto;
+}
+
 .inspiration {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "firstText secondText thirdText";
+    grid-template-areas: "firstText secondText thirdText";
     justify-items: center;
-    align-items: center;
-    justify-content: space-evenly;
-    align-content: space-evenly;
+    align-items: baseline;
+    margin-bottom: 35px;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .firstText {
     grid-area: firstText;
     display: flex;
     width: 23.75rem;
-    height: 13.3125rem;
-    padding-bottom: 0px;
     flex-direction: column;
     align-items: center;
     gap: 0.9375rem;
@@ -193,16 +214,14 @@ nav {
     flex-shrink: 0;
 }
 
-/* конец ТРЕТЬЕГО блока "what inspires us?" */
-/* начало ПЯТОГО блока "Pay and feed" */
+/* конец ТРЕТЬЕГО блока "What inspires us?" */
 
+/* начало ПЯТОГО блока "Pay and feed" */
 .block-pay {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    /* width: 1921px;
-height: 754px; */
     background-color: #F2F2F2;
 }
 
@@ -214,7 +233,6 @@ height: 754px; */
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-
 }
 
 .txt_style {
@@ -246,9 +264,9 @@ height: 754px; */
 }
 
 .section-button {
-    align-self: flex-end;
-
+    align-self: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
-
 
 /* конец ПЯТОГО блока "Pay and feed"   */
