@@ -101,3 +101,44 @@ background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);}
 			}
 
 			/* конец блока Watch  your favorite animal */
+						/* начало ПЯТОГО блока "Pay and feed" */
+		
+.pay {
+	background-color: #F2F2F2;
+}
+.title_style {
+color: var(--Gray-1, #333);
+text-align: center;
+font-family: Roboto;
+font-size: 48px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+
+}
+.txt_style {
+color: var(--Gray-2, #4F4F4F);
+text-align: center;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.options {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.arrow {
+	width: 6em;
+	flex-shrink: 0;
+    padding: 3em;
+}
+.round {
+width: 15em;
+height: 15em;
+flex-shrink: 0;
+}
+            
+			/* конец ПЯТОГО блока "Pay and feed"   */
