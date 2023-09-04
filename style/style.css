@@ -33,106 +33,117 @@ nav {
 
 
 .animals {
-position:relative;
-background-image: url(/assets/img/jpg_rectangle_32.jpg);
-width: 1922px;
-height: 940px;
-margin: 0 auto;
-box-sizing: border-box;
- }
-
-
-.animals__title 
-{position: absolute;
-   
-width: 793px;
-height: 208px;
-padding-top: 180px;
-padding-left: 360px;
-
-}
-    .animals__title-title {
-font-size: 89px;
-font-weight: 900;
-line-height: 104px;
-letter-spacing: 0em;
-color: white;
+    position: relative;
+    background-image: url(/assets/img/jpg_rectangle_32.jpg);
+    width: 1922px;
+    height: 940px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
+.animals__title {
+    position: absolute;
 
-.animals__cards { 
-position:relative;
-display: grid;
-grid-template-columns: repeat(auto-fill, 20%);
-padding-left: 800px;
-padding-top: 0px;
+    width: 793px;
+    height: 208px;
+    padding-top: 180px;
+    padding-left: 360px;
+
 }
+
+.animals__title-title {
+    font-size: 89px;
+    font-weight: 900;
+    line-height: 104px;
+    letter-spacing: 0em;
+    color: white;
+}
+
+
+
+.animals__cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20%);
+    padding-left: 800px;
+    padding-top: 0px;
+}
+
 .card {
-width: 160px;
-height: 250px;
+    width: 160px;
+    height: 250px;
 
 }
-.animals__card-img{
-  border-radius: 20px;
-  width: 200px;
-height: 250px;}
-.card :hover{
-	  transform: scale(1.2);
+
+.animals__card-img {
+    border-radius: 20px;
+    width: 200px;
+    height: 250px;
+}
+
+.card :hover {
+    transform: scale(1.2);
     filter: contrast(110%) brightness(1.2) saturate(1.2);
-	 transition: all 0.2s ease-in;}
-   
+    transition: all 0.2s ease-in;
+}
 
- .animals__socials {
-position: absolute;
-display: grid;
-width: 100px;
-height: 107px;
-padding-top: 5px;
-padding-left:200px;
- }
- .animals__socials-list {
- list-style-type: none;}
- 
+
+.animals__socials {
+    position: absolute;
+    display: grid;
+    width: 100px;
+    height: 107px;
+    padding-top: 5px;
+    padding-left: 200px;
+}
+
+.animals__socials-list {
+    list-style-type: none;
+}
+
 .animals__form {
-position: relative;
-width: 245px;
-height: 55px;
-padding-left: 360px;
-padding-top: 451px;
+    position: relative;
+    width: 245px;
+    height: 55px;
+    padding-left: 360px;
+    padding-top: 451px;
 
 }
+
 .search-form__button {
-position: absolute;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 245px;
-height: 55px;
-border-radius: 3px;
-background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);}
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 245px;
+    height: 55px;
+    border-radius: 3px;
+    background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+}
 
 .search-form__button:hover {
-	 background:rgb(138, 196, 51); }
+    background: rgb(138, 196, 51);
+}
 
-			.button-icon {
-				width: 32px;
-				height: 32px;
-				padding-right: 5px;
-			}
+.button-icon {
+    width: 32px;
+    height: 32px;
+    padding-right: 5px;
+}
 
-			.button-text {
-				color: #ffffff;
-				font-family: Roboto;
-				font-size: 18px;
-				font-weight: 900;
-				line-height: 21px;
-				letter-spacing: 0em;
-				text-align: center;
-			}
+.button-text {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+}
 
-			/* конец блока Watch  your favorite animal */
-            /* начало ТРЕТЬЕГО блока "what inspires us?" */
+/* конец блока Watch  your favorite animal */
+/* начало ТРЕТЬЕГО блока "what inspires us?" */
 .inspiration {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -183,55 +194,61 @@ background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);}
 }
 
 /* конец ТРЕТЬЕГО блока "what inspires us?" */
-						/* начало ПЯТОГО блока "Pay and feed" */
-		
+/* начало ПЯТОГО блока "Pay and feed" */
+
 .block-pay {
-display: flex;
-flex-direction: column;
-align-items: stretch;
-justify-content: center;
-/* width: 1921px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    /* width: 1921px;
 height: 754px; */
-background-color: #F2F2F2;
+    background-color: #F2F2F2;
 }
+
 .title_style {
-color: var(--Gray-1, #333);
-text-align: center;
-font-family: Roboto;
-font-size: 48px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
+    color: var(--Gray-1, #333);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 
 }
+
 .txt_style {
-color: var(--Gray-2, #4F4F4F);
-text-align: center;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    color: var(--Gray-2, #4F4F4F);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+
 .options {
-display: flex;
-align-items: stretch;
-justify-content: center;
-} 
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
 .arrow {
-	width: 6em;
-	flex-shrink: 0;
+    width: 6em;
+    flex-shrink: 0;
     padding: 3em;
 }
+
 .round {
-width: 15em;
-height: 15em;
-flex-shrink: 0;
+    width: 15em;
+    height: 15em;
+    flex-shrink: 0;
 }
+
 .section-button {
-align-self: flex-end;
+    align-self: flex-end;
 
-} 
+}
 
-            
-			/* конец ПЯТОГО блока "Pay and feed"   */
+
+/* конец ПЯТОГО блока "Pay and feed"   */
