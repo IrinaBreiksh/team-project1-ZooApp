@@ -170,12 +170,16 @@ nav {
 /* конец ВТОРОГО блока "How it works?"  */
 
 /* начало ТРЕТЬЕГО блока "What inspires us?" */
+.inspiration {
+	background: var(--Gray-6, #F2F2F2);
+}
+
 .inspiration__container {
 	max-width: 1198px;
 	margin: 0 auto;
 }
 
-.inspiration {
+.inspiration__info {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
@@ -186,8 +190,18 @@ nav {
 }
 
 h3 {
-	font-weight: 900;
-	font-size: 20px;
+	color: var(--Gray-1, #333);
+	font-size: 1.25rem;
+	line-height: normal;
+}
+
+.inspiration p {
+	color: var(--Gray-2, #4F4F4F);
+	font-family: Roboto;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
 
 .firstText {
