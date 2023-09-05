@@ -1,41 +1,41 @@
 @import url(./fonts.css);
 
 body {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* начало ШАПКИ header */
 .header__container {
-	max-width: 1616px;
+    max-width: 1616px;
 }
 
 header {
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
 nav {
-	display: flex;
-	flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 #menu {
-	padding: 35px;
-	text-decoration: none;
-	color: var(--Gray-1, #333);
-	font-family: Roboto;
-	font-size: 1rem;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
+    padding: 35px;
+    text-decoration: none;
+    color: var(--Gray-1, #333);
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 #menu:hover {
-	font-weight: 900;
-	text-decoration: underline;
+    font-weight: 900;
+    text-decoration: underline;
 }
 
 /* конец ШАПКИ header */
@@ -43,240 +43,480 @@ nav {
 
 /* начало ПЕРВОГО блока "Watch  your favorite animal" */
 .animals {
-	position: relative;
-	background-image: url(/HTML+CSS/team-project1/assets/img/jpg_rectangle_32.jpg);
-	max-width: 1922px;
-	height: 940px;
-	margin: 0 auto;
-	box-sizing: border-box;
+    position: relative;
+    background-image: url(/HTML+CSS/team-project1/assets/img/jpg_rectangle_32.jpg);
+    max-width: 1922px;
+    height: 940px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .animals__title {
-	position: absolute;
-	width: 793px;
-	height: 208px;
-	padding-top: 180px;
-	padding-left: 360px;
+    position: absolute;
+    width: 793px;
+    height: 208px;
+    padding-top: 180px;
+    padding-left: 360px;
 
 }
 
 .animals__title-title {
-	font-size: 89px;
-	font-weight: 900;
-	line-height: 104px;
-	letter-spacing: 0em;
-	color: white;
+    font-size: 89px;
+    font-weight: 900;
+    line-height: 104px;
+    letter-spacing: 0em;
+    color: white;
 }
 
 .animals__cards {
-	position: relative;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, 20%);
-	padding-left: 800px;
-	padding-top: 0px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20%);
+    padding-left: 800px;
+    padding-top: 0px;
 }
 
 .card {
-	width: 160px;
-	height: 250px;
+    width: 160px;
+    height: 250px;
 }
 
 .animals__card-img {
-	border-radius: 20px;
-	width: 200px;
-	height: 250px;
+    border-radius: 20px;
+    width: 200px;
+    height: 250px;
 }
 
 .card:hover {
-	transform: scale(1.2);
-	filter: contrast(110%) brightness(1.2) saturate(1.2);
-	transition: all 0.2s ease-in;
+    transform: scale(1.2);
+    filter: contrast(110%) brightness(1.2) saturate(1.2);
+    transition: all 0.2s ease-in;
 }
 
 .animals__socials {
-	position: absolute;
-	display: grid;
-	width: 100px;
-	height: 107px;
-	padding-top: 5px;
-	padding-left: 200px;
+    position: absolute;
+    display: grid;
+    width: 100px;
+    height: 107px;
+    padding-top: 5px;
+    padding-left: 200px;
 }
 
 .animals__socials-list {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 .animals__form {
-	width: 245px;
-	height: 55px;
-	padding-left: 360px;
-	padding-top: 451px;
+    width: 245px;
+    height: 55px;
+    padding-left: 360px;
+    padding-top: 451px;
 }
 
 .search-form__button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 245px;
-	height: 55px;
-	border-radius: 3px;
-	background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 245px;
+    height: 55px;
+    border-radius: 3px;
+    background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
 }
 
 .search-form__button:hover {
-	background: rgb(138, 196, 51);
+    background: rgb(138, 196, 51);
 }
 
 .button-icon {
-	width: 32px;
-	height: 32px;
-	padding-right: 5px;
+    width: 32px;
+    height: 32px;
+    padding-right: 5px;
 }
 
 .button-text {
-	color: #ffffff;
-	font-family: Roboto;
-	font-size: 18px;
-	font-weight: 900;
-	line-height: 21px;
-	text-align: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 21px;
+    text-align: center;
 }
 
 /* конец ПЕРВОГО блока "Watch  your favorite animal" */
 
 /* начало ВТОРОГО блока "How it works?"  */
 .how {
-	max-width: 790px;
-	margin: 0 auto;
+    max-width: 790px;
+    margin: 0 auto;
 }
 
 .how__title {
-	text-align: center;
-	/* font-weight: 900; */
-	font-size: 48px;
-	margin-bottom: 35px;
+    text-align: center;
+    /* font-weight: 900; */
+    font-size: 48px;
+    margin-bottom: 35px;
 }
 
 .how__img {
-	margin-top: 35px;
-	margin-bottom: 35px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .how__button {
-	margin: 0 auto;
-	margin-bottom: 155px;
+    margin: 0 auto;
+    margin-bottom: 155px;
 }
 
 /* конец ВТОРОГО блока "How it works?"  */
 
 /* начало ТРЕТЬЕГО блока "What inspires us?" */
-.inspiration__container {
-	max-width: 1198px;
-	margin: 0 auto;
-}
 
 .inspiration {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: "firstText secondText thirdText";
-	justify-items: center;
-	align-items: baseline;
-	margin-bottom: 35px;
+    background: var(--Gray-6, #F2F2F2);
+}
+
+.inspiration__container {
+    max-width: 1198px;
+    margin: 0 auto;
+}
+
+.inspiration__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "firstText secondText thirdText";
+    justify-items: center;
+    align-items: baseline;
+    margin-bottom: 35px;
+
 }
 
 h3 {
-	font-weight: 900;
-	font-size: 20px;
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .firstText {
-	grid-area: firstText;
-	display: flex;
-	width: 23.75rem;
-	flex-direction: column;
-	align-items: center;
-	gap: 0.9375rem;
-	flex-shrink: 0;
+    grid-area: firstText;
+    display: flex;
+    width: 23.75rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9375rem;
+    flex-shrink: 0;
 }
 
 .secondText {
-	grid-area: secondText;
-	display: flex;
-	width: 23.75rem;
-	height: 10.3125rem;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 0.9375rem;
-	flex-shrink: 0;
+    grid-area: secondText;
+    display: flex;
+    width: 23.75rem;
+    height: 10.3125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9375rem;
+    flex-shrink: 0;
 }
 
 .thirdText {
-	grid-area: thirdText;
-	display: flex;
-	width: 23.75rem;
-	height: 11.3125rem;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 0.9375rem;
-	flex-shrink: 0;
+    grid-area: thirdText;
+    display: flex;
+    width: 23.75rem;
+    height: 11.3125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9375rem;
+    flex-shrink: 0;
 }
 
 /* конец ТРЕТЬЕГО блока "What inspires us?" */
 
 /* начало ПЯТОГО блока "Pay and feed" */
 .block-pay {
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-	justify-content: center;
-	background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #F2F2F2;
 }
 
 .title_style {
-	color: var(--Gray-1, #333);
-	text-align: center;
-	font-family: Roboto;
-	font-size: 48px;
-	font-style: normal;
-	font-weight: 900;
-	line-height: normal;
+    color: var(--Gray-1, #333);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
 .txt_style {
-	color: var(--Gray-2, #4F4F4F);
-	text-align: center;
-	font-family: Roboto;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
+    color: var(--Gray-2, #4F4F4F);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .options {
-	display: flex;
-	align-items: stretch;
-	justify-content: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
 }
 
 .arrow {
-	width: 6em;
-	flex-shrink: 0;
-	padding: 3em;
+    width: 6em;
+    flex-shrink: 0;
+    padding: 3em;
 }
 
 .round {
-	width: 15em;
-	height: 15em;
-	flex-shrink: 0;
+    width: 15em;
+    height: 15em;
+    flex-shrink: 0;
 }
 
 .section-button {
-	align-self: center;
-	margin-top: 35px;
-	margin-bottom: 35px;
+    align-self: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 /* конец ПЯТОГО блока "Pay and feed"   */
+
+@media screen and (min-width:750px) {
+    .animals {
+        position: relative;
+        background-image: url(/HTML+CSS/team-project1/assets/img/jpg_rectangle_32.jpg);
+        width: 1922px;
+        height: 940px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .animals__title {
+        position: absolute;
+        width: 793px;
+        height: 208px;
+        padding-top: 180px;
+        padding-left: 360px;
+    }
+
+    .animals__title-title {
+        font-family: Roboto;
+        font-size: 89px;
+        font-weight: 900;
+        line-height: 104px;
+        letter-spacing: 0em;
+        color: white;
+    }
+
+    .animals__cards {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 20%);
+        padding-left: 800px;
+        padding-top: 0px;
+    }
+
+    .animals__cards :hover {
+        transform: scale(1.2);
+        filter: contrast(110%) brightness(1.2) saturate(1.2);
+        transition: all 0.2s ease-in;
+    }
+
+    .card {
+        width: 160px;
+        height: 250px;
+    }
+
+    .animals__card-img {
+        border-radius: 20px;
+        width: 200px;
+        height: 250px;
+    }
+
+    .card :hover {
+        transform: scale(1.2);
+        filter: contrast(110%) brightness(1.2) saturate(1.2);
+        transition: all 0.2s ease-in;
+    }
+
+    .animals__socials {
+        position: absolute;
+        display: grid;
+        width: 100px;
+        height: 107px;
+        padding-top: 5px;
+        padding-left: 200px;
+    }
+
+    .animals__socials-list {
+        list-style-type: none;
+    }
+
+    .animals__form {
+        position: relative;
+        width: 245px;
+        height: 55px;
+        padding-left: 360px;
+        padding-top: 451px;
+    }
+
+    .search-form__button {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 245px;
+        height: 55px;
+        border-radius: 3px;
+        background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+    }
+
+    .search-form__button:hover {
+        background: rgb(138, 196, 51);
+    }
+
+    .button-icon {
+        width: 32px;
+        height: 32px;
+        padding-right: 5px;
+    }
+
+    .button-text {
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}
+
+/* адаптив для tablet */
+@media screen and (max-width:750px) {
+    .animals {
+        position: relative;
+        background-image: url(/HTML+CSS/team-project1/assets/img/jpg_rectangle_32.jpg);
+        width: 640px;
+        height: 940px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .animals__title {
+        position: absolute;
+        display: flex;
+        width: 599px;
+        height: 150px;
+        padding-top: 10%;
+        align-items: center;
+    }
+
+    .animals__title-title {
+        font-family: Roboto;
+        font-size: 64px;
+        font-weight: 900;
+        line-height: 75px;
+        letter-spacing: 0em;
+        color: white;
+    }
+
+    .animals__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 30% 50% 20%;
+    }
+
+    .animals__cards :hover {
+        transform: scale(1.2);
+        filter: contrast(110%) brightness(1.2) saturate(1.2);
+        transition: all 0.2s ease-in;
+    }
+
+    .card1 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        width: 160px;
+        height: 200px;
+    }
+
+    .card2 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+
+    .card3 {
+        grid-column-start: 4;
+        grid-row-start: 2;
+    }
+
+    .card4 {
+        display: none;
+    }
+
+    .card5 {
+        display: none;
+    }
+
+    .animals__card-img {
+        border-radius: 20px;
+        width: 160px;
+        height: 200px;
+    }
+
+    .animals__socials {
+        position: absolute;
+        width: 100px;
+        height: 107px;
+        padding-top: 180px;
+    }
+
+    .animals__socials-list {
+        list-style-type: none;
+    }
+
+    .animals__form {
+        position: relative;
+        width: 245px;
+        height: 55px;
+        justify-content: center;
+        padding-top: 40%;
+    }
+
+    .search-form__button {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 245px;
+        height: 55px;
+        border-radius: 3px;
+        background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+    }
+
+    .search-form__button:hover {
+        background: rgb(138, 196, 51);
+    }
+
+    .button-icon {
+        width: 32px;
+        height: 32px;
+        padding-right: 5px;
+    }
+
+    .button-text {
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}
