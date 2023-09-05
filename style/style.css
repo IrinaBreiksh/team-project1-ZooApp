@@ -367,7 +367,6 @@ h3 {
     }
 
     .search-form__button {
-        position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -490,7 +489,6 @@ h3 {
     }
 
     .search-form__button {
-        position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
