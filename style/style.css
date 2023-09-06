@@ -42,7 +42,7 @@ nav {
 
 
 /* начало ПЕРВОГО блока "Watch  your favorite animal" */
-@media screen and (min-width:770px) {
+@media screen and (min-width:720px) {
     .animals {
         position: relative;
         background-image: url(../assets/img/jpg_rectangle_32.jpg);
@@ -52,65 +52,48 @@ nav {
         display:grid;
         box-sizing: border-box;
         grid-template-columns:10% 20% 30% 40%;
-        grid-template-rows: 10% 20% 10% 10% 20% 10%;
-       
-    }
+        grid-template-rows: 5% 25% 10% 10% 20% 10%;}
 
     .animals__title {
-    grid-area:1/2/2/7;}
+    grid-area:2/2/2/7;}
       
 
     .animals__title-title {
         font-size: 89px;
         font-weight: 900;
         line-height: 104px;
-        letter-spacing: 0em;
-        color: white;
-    }
+        line-height:  1em;
+        color: white;}
 
     .animals__cards {
         grid-row: 5;
         grid-column-start: 3;
-        grid-column-end: 8;
-        
-    }
+        grid-column-end: 8;}
 
     .animals__cards :hover {
         transform: scale(1.2);
         filter: contrast(110%) brightness(1.2) saturate(1.2);
-        transition: all 0.2s ease-in;
-    }
+        transition: all 0.2s ease-in;}
 
-
-    
     .animals__card-img {
         border-radius: 20px;
         width: 165px;
-        height: 245px;
-    }
+        height: 245px;}
    
-
     .card :hover {
         transform: scale(1.2);
         filter: contrast(110%) brightness(1.2) saturate(1.2);
-        transition: all 0.2s ease-in;
-    }
+        transition: all 0.2s ease-in;}
 
     .animals__socials {
-
-   grid-area: 6/2;
-        
-    }
+     grid-area: 6/2;}
 
     .animals__socials-list {
-        list-style-type: none;
-    }
+        list-style-type: none;}
 
     .animals__form {
         align-self: center;
-    grid-area: 4/2;
-        
-    }
+    grid-area: 4/2;}
 
     .search-form__button {
         display: flex;
@@ -119,18 +102,15 @@ nav {
         width: 245px;
         height: 55px;
         border-radius: 3px;
-        background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
-    }
+        background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);}
 
     .search-form__button:hover {
-        background: rgb(138, 196, 51);
-    }
+        background: rgb(138, 196, 51);}
 
     .button-icon {
         width: 32px;
         height: 32px;
-        padding-right: 5px;
-    }
+        padding-right: 5px;}
 
     .button-text {
         color: #FFFFFF;
@@ -140,12 +120,11 @@ nav {
         line-height: 21px;
         letter-spacing: 0em;
         text-align: center;
-    }
-}
+    }}
 
 
 /* адаптив Первого блока для tablet */
-@media screen and (max-width:768px) {
+@media screen and (max-width:719px) {
 
      .animals {
         position: relative;
@@ -156,76 +135,144 @@ nav {
         display:grid;
         box-sizing: border-box;
         grid-template-columns:20% 20% 20% 20% 20%;
-        grid-template-rows:20% 20% 20% 20% 20% ;
-       
-    }
+        grid-template-rows:10% 30% 20% 20% 20%; }
 
     .animals__title {
-    grid-area:1/2/2/6;}
+    grid-area:2/2/2/6;}
       
 
     .animals__title-title {
         font-size: 60px;
         font-weight: 900;
         line-height: 104px;
-        letter-spacing: 0em;
-        color: white;
-    }
+        line-height: 1em;
+        color: white;}
 
     .animals__cards {
-        grid-area: 4/2/7/7;
-
-     
-        
-    }
+        grid-area: 4/2/7/7;}
 
     .animals__cards :hover {
         transform: scale(1.2);
         filter: contrast(110%) brightness(1.2) saturate(1.2);
-        transition: all 0.2s ease-in;
-    }
+        transition: all 0.2s ease-in;}
 
 
     
     .animals__card-img {
         border-radius: 20px;
         width: 165px;
-        height: 250px;
-       
-    }
+        height: 250px;}
     
     
     .card3 {
-        display: none;
-    }
+        display: none;}
     .card4 {
-        display: none;
-    }
-
+        display: none;}
     .card5 {
-        display: none;
-    }
-   
+        display: none;}
 
     .card :hover {
         transform: scale(1.2);
         filter: contrast(110%) brightness(1.2) saturate(1.2);
-        transition: all 0.2s ease-in;
-    }
+        transition: all 0.2s ease-in;}
 
     .animals__socials {
-        grid-area: 5/1;
-       }
+        grid-area: 5/1;}
 
     .animals__socials-list {
-        list-style-type: none;
-    }
+        list-style-type: none;}
 
     .animals__form {
         align-self: center;
-    grid-area:3/2/3/3;
-        
+    grid-area:3/2/3/3;}
+
+    .search-form__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 245px;
+        height: 55px;
+        border-radius: 3px;
+        background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);}
+
+    .search-form__button:hover {
+        background: rgb(138, 196, 51);}
+
+    .button-icon {
+        width: 32px;
+        height: 32px;
+        padding-right: 5px}
+
+    .button-text {
+        color: #FFFFFF;
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
     }
+}
+/* конец адаптива Первого блока для tablet */
+/* начало адаптива Первого блока для Mobile devices */
+@media screen and (max-width:419px) {
+
+     .animals {
+        position: relative;
+        background-image: url(../assets/img/jpg_rectangle_32.jpg);
+         max-width: 640px;
+        height: 940px;
+        margin: 0;
+        display:grid;
+        box-sizing: border-box;
+        grid-template-columns:10% 30% 10% 40%;
+        grid-template-rows:10% 10% 10% 20% 20%; }
+
+    .animals__title {
+    grid-area:2/2/2/5;}
+
+    .animals__title-title {
+        font-size: 48px;
+        font-weight: 900;
+     line-height: 1em;
+       font-family: "Roboto";
+        color: white;}
+
+    .animals__cards {
+        grid-area: 5/3/7/5;}
+
+    .animals__cards :hover {
+        transform: scale(1.2);
+        filter: contrast(110%) brightness(1.2) saturate(1.2);
+        transition: all 0.2s ease-in; }
+
+    .animals__card-img {
+        border-radius: 20px;
+        width: 150px;
+        height: 200px; }
+    .card1 {
+        display: none; }
+    .card3 {
+        display: none; }
+    .card4 {
+        display: none;}
+    .card5 {
+        display: none;}
+
+    .card :hover {
+        transform: scale(1.2);
+        filter: contrast(110%) brightness(1.2) saturate(1.2);
+        transition: all 0.2s ease-in;}
+
+    .animals__socials {
+     grid-area: 6/1;}
+
+    .animals__socials-list {
+     list-style-type: none;}
+
+    .animals__form {
+     align-self: center;
+    grid-area:4/2/4/3; }
 
     .search-form__button {
         display: flex;
@@ -255,12 +302,11 @@ nav {
         line-height: 21px;
         letter-spacing: 0em;
         text-align: center;
-    }
-}
-/* конец адаптива для Первого блока для tablet */
-
+    }}
     
+    /* конец адаптива Первого блока для Mobile devices */
 /* конец ПЕРВОГО блока "Watch  your favorite animal" */
+
 
 /* начало ВТОРОГО блока "How it works?"  */
 .how {
