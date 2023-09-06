@@ -45,7 +45,7 @@ nav {
 @media screen and (min-width:770px) {
     .animals {
         position: relative;
-        background-image: url(/assets/img/jpg_rectangle_32.jpg);
+        background-image: url(../assets/img/jpg_rectangle_32.jpg);
         max-width: 1920px;
         height: 940px;
         margin: 0 auto;
@@ -149,7 +149,7 @@ nav {
 
      .animals {
         position: relative;
-        background-image: url(/assets/img/jpg_rectangle_32.jpg);
+        background-image: url(../assets/img/jpg_rectangle_32.jpg);
          max-width: 640px;
         height: 940px;
         margin: 0 auto;
