@@ -45,7 +45,9 @@ nav {
 @media screen and (min-width:750px) {
     .animals {
         position: relative;
-        background-image: url(/HTML+CSS/team-project1/assets/img/jpg_rectangle_32.jpg);
+        /* background: url(../assets/img/jpg_rectangle_32.jpg) no-repeat center; */
+        /* background-size: cover; */
+        background-image: url(../assets/img/jpg_rectangle_32.jpg);
         width: 1922px;
         height: 940px;
         margin: 0 auto;
@@ -156,8 +158,10 @@ nav {
 @media screen and (max-width:750px) {
     .animals {
         position: relative;
-        background-image: url(/HTML+CSS/team-project1/assets/img/jpg_rectangle_32.jpg);
-        width: 640px;
+        /* background: url(../assets/img/jpg_rectangle_32.jpg) no-repeat center;
+        background-size: cover; */
+        background-image: url(../assets/img/jpg_rectangle_32.jpg);
+        /* width: 640px; */
         height: 940px;
         margin: 0 auto;
         box-sizing: border-box;
@@ -423,6 +427,12 @@ h3 {
     align-self: center;
     margin-top: 35px;
     margin-bottom: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    ;
 }
 
 /* конец ПЯТОГО блока "Pay and feed"   */

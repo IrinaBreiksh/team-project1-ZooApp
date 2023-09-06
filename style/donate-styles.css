@@ -1,0 +1,42 @@
+@import url(./fonts.css);
+
+.donate-form {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: stretch;
+}
+
+.donate-form__title {
+    text-align: center;
+    margin: 50px;
+}
+
+.donate-form__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.donate-form__title-title {
+    padding-left: 30px;
+}
+
+fieldset {
+    width: 335px;
+    height: 65px;
+    margin: 20px;
+}
+
+.donate-form__text {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    margin: 50px;
+
+}
+
+.donate-form__button {
+    margin: 20px auto;
+}
