@@ -456,198 +456,214 @@ h3 {
 
 /* конец ТРЕТЬЕГО блока "What inspires us?" */
 
-/* начало ЧЕТВЕРТОГО блока "Pets in ZOO" */
-.pets_container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-items: center;
-    align-items: center;
-    grid-template-areas:
-        "h2"
-        "img_container"
-        "button";
-}
+/* начало адаптива tablet ТРЕТЬЕГО блока "What inspires us?"  */
+@media screen and (max-width:719px) {
 
-#title_4 {
-    grid-area: h2;
-}
+    .inspiration__info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "firstText" "secondText" "thirdText";
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 35px;
+        grid-row-gap: 35px;
+    }
 
-.img_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 30px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "img1 img2 img3 img4";
-    grid-area: img_container;
-}
+    /* конец адаптива tablet ТРЕТЬЕГО блока "What inspires us?"  */
 
-#img_panda {
-    grid-area: img1;
-}
+    /* начало ЧЕТВЕРТОГО блока "Pets in ZOO" */
+    .pets_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+            "h2"
+            "img_container"
+            "button";
+    }
 
-#img_bird {
-    grid-area: img2;
-}
+    #title_4 {
+        grid-area: h2;
+    }
 
-#img_monkey {
-    grid-area: img3;
-}
+    .img_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "img1 img2 img3 img4";
+        grid-area: img_container;
+    }
 
-#img_crocodile {
-    grid-area: img4;
-}
+    #img_panda {
+        grid-area: img1;
+    }
 
-.choose_button {
-    grid-area: button;
-}
+    #img_bird {
+        grid-area: img2;
+    }
 
-/* конец ЧЕТВЕРТОГО блока "Pets in ZOO" */
+    #img_monkey {
+        grid-area: img3;
+    }
 
-/* начало ПЯТОГО блока "Pay and feed" */
-.block-pay {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    background-color: #F2F2F2;
-}
+    #img_crocodile {
+        grid-area: img4;
+    }
 
-.title_style {
-    color: var(--Gray-1, #333);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-}
+    .choose_button {
+        grid-area: button;
+    }
 
-.txt_style {
-    color: var(--Gray-2, #4F4F4F);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+    /* конец ЧЕТВЕРТОГО блока "Pets in ZOO" */
 
-.options {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-}
+    /* начало ПЯТОГО блока "Pay and feed" */
+    .block-pay {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        background-color: #F2F2F2;
+    }
 
-.arrow {
-    width: 6em;
-    flex-shrink: 0;
-    padding: 3em;
-}
+    .title_style {
+        color: var(--Gray-1, #333);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
 
-.round {
-    width: 15em;
-    height: 15em;
-    flex-shrink: 0;
-}
+    .txt_style {
+        color: var(--Gray-2, #4F4F4F);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
-.section-button {
-    align-self: center;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
+    .options {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
 
-a {
-    text-decoration: none;
-    color: #FFFFFF;
-    ;
-}
+    .arrow {
+        width: 6em;
+        flex-shrink: 0;
+        padding: 3em;
+    }
 
-/* конец ПЯТОГО блока "Pay and feed"   */
+    .round {
+        width: 15em;
+        height: 15em;
+        flex-shrink: 0;
+    }
 
-/* начало ШЕСТОГО блока "Testimonials" */
-.testimonials__container {
-    max-width: 1198px;
-    margin: 0 auto;
-}
+    .section-button {
+        align-self: center;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
 
-.testimonials {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "h2 h2"
-        "feedback_1 feedback_2"
-        "leave_feedback leave_feedback";
-    justify-items: center;
-    align-items: center;
-}
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+        ;
+    }
 
-#title_5 {
-    grid-area: h2;
-}
+    /* конец ПЯТОГО блока "Pay and feed"   */
 
-.feedback_1 {
-    grid-area: feedback_1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    /* начало ШЕСТОГО блока "Testimonials" */
+    .testimonials__container {
+        max-width: 1198px;
+        margin: 0 auto;
+    }
 
-.feedback_1 img {
-    width: 3rem;
-}
+    .testimonials {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "h2 h2"
+            "feedback_1 feedback_2"
+            "leave_feedback leave_feedback";
+        justify-items: center;
+        align-items: center;
+    }
 
-.feedback_2 {
-    grid-area: feedback_2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    #title_5 {
+        grid-area: h2;
+    }
 
-.testimonials p {
-    color: var(--Gray-2, #4F4F4F);
-    width: 27.5rem;
-    font-family: Roboto;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+    .feedback_1 {
+        grid-area: feedback_1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.leave_feedback_button {
-    grid-area: leave_feedback;
-}
+    .feedback_1 img {
+        width: 3rem;
+    }
 
-.search-form__button_6 {
-    width: 245px;
-    height: 55px;
-    border-radius: 3px;
-    background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
-}
+    .feedback_2 {
+        grid-area: feedback_2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.search-form__button_6:hover {
-    background: rgb(138, 196, 51);
-}
+    .testimonials p {
+        color: var(--Gray-2, #4F4F4F);
+        width: 27.5rem;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
-.feedback_1:hover {
-    border-radius: 0.3125rem;
-    background: #FEFEFE;
-    box-shadow: 2px 4px 15px 0px rgba(6, 12, 70, 0.10);
-}
+    .leave_feedback_button {
+        grid-area: leave_feedback;
+    }
 
-.feedback_2:hover {
-    border-radius: 0.3125rem;
-    background: #FEFEFE;
-    box-shadow: 2px 4px 15px 0px rgba(6, 12, 70, 0.10);
-}
+    .search-form__button_6 {
+        width: 245px;
+        height: 55px;
+        border-radius: 3px;
+        background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+    }
 
-/* конец ШЕСТОГО блока "Testimonials" */
+    .search-form__button_6:hover {
+        background: rgb(138, 196, 51);
+    }
+
+    .feedback_1:hover {
+        border-radius: 0.3125rem;
+        background: #FEFEFE;
+        box-shadow: 2px 4px 15px 0px rgba(6, 12, 70, 0.10);
+    }
+
+    .feedback_2:hover {
+        border-radius: 0.3125rem;
+        background: #FEFEFE;
+        box-shadow: 2px 4px 15px 0px rgba(6, 12, 70, 0.10);
+    }
+
+    /* конец ШЕСТОГО блока "Testimonials" */
