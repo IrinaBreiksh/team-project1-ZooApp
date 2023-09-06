@@ -42,28 +42,32 @@ nav {
 
 
 /* начало ПЕРВОГО блока "Watch  your favorite animal" */
-@media screen and (min-width:750px) {
+@media screen and (min-width:770px) {
     .animals {
         position: relative;
+<<<<<<< HEAD
         /* background: url(../assets/img/jpg_rectangle_32.jpg) no-repeat center; */
         /* background-size: cover; */
         background-image: url(../assets/img/jpg_rectangle_32.jpg);
         width: 1922px;
+=======
+        background-image: url(/assets/img/jpg_rectangle_32.jpg);
+        max-width: 1920px;
+>>>>>>> 695e609e7e1928b4b8fdedbd5df3eba81517b66c
         height: 940px;
         margin: 0 auto;
+        display:grid;
         box-sizing: border-box;
+        grid-template-columns:10% 20% 20% 20% 10%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+       
     }
 
     .animals__title {
-        position: absolute;
-        width: 793px;
-        height: 208px;
-        padding-top: 180px;
-        padding-left: 360px;
-    }
+    grid-area:2/2/2/7;}
+      
 
     .animals__title-title {
-        font-family: Roboto;
         font-size: 89px;
         font-weight: 900;
         line-height: 104px;
@@ -72,11 +76,10 @@ nav {
     }
 
     .animals__cards {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 20%);
-        padding-left: 800px;
-        padding-top: 0px;
+        grid-row: 4;
+        grid-column-start: 3;
+        grid-column-end: 9;
+        
     }
 
     .animals__cards :hover {
@@ -85,16 +88,14 @@ nav {
         transition: all 0.2s ease-in;
     }
 
-    .card {
-        width: 160px;
-        height: 250px;
-    }
 
+    
     .animals__card-img {
         border-radius: 20px;
-        width: 200px;
-        height: 250px;
+        width: 165px;
+        height: 245px;
     }
+   
 
     .card :hover {
         transform: scale(1.2);
@@ -103,12 +104,9 @@ nav {
     }
 
     .animals__socials {
-        position: absolute;
-        display: grid;
-        width: 100px;
-        height: 107px;
-        padding-top: 5px;
-        padding-left: 200px;
+
+   grid-area: 5/1/6/2;
+        
     }
 
     .animals__socials-list {
@@ -116,11 +114,9 @@ nav {
     }
 
     .animals__form {
-        position: relative;
-        width: 245px;
-        height: 55px;
-        padding-left: 360px;
-        padding-top: 451px;
+        align-self: center;
+    grid-area: 3/2;
+        
     }
 
     .search-form__button {
@@ -154,41 +150,47 @@ nav {
     }
 }
 
+
 /* адаптив для tablet */
-@media screen and (max-width:750px) {
-    .animals {
+@media screen and (max-width:768px) {
+
+     .animals {
         position: relative;
+<<<<<<< HEAD
         /* background: url(../assets/img/jpg_rectangle_32.jpg) no-repeat center;
         background-size: cover; */
         background-image: url(../assets/img/jpg_rectangle_32.jpg);
         /* width: 640px; */
+=======
+        background-image: url(/assets/img/jpg_rectangle_32.jpg);
+         max-width: 640px;
+>>>>>>> 695e609e7e1928b4b8fdedbd5df3eba81517b66c
         height: 940px;
         margin: 0 auto;
+        display:grid;
         box-sizing: border-box;
+        grid-template-columns:20% 20% 20% 20% 20%;
+        grid-template-rows:20% 20% 20% 20% 20% ;
+       
     }
 
     .animals__title {
-        position: absolute;
-        display: flex;
-        width: 599px;
-        height: 150px;
-        padding-top: 10%;
-        align-items: center;
-    }
+    grid-area:1/2/2/6;}
+      
 
     .animals__title-title {
-        font-family: Roboto;
-        font-size: 64px;
+        font-size: 60px;
         font-weight: 900;
-        line-height: 75px;
+        line-height: 104px;
         letter-spacing: 0em;
         color: white;
     }
 
     .animals__cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 30% 50% 20%;
+        grid-area: 4/2/7/7;
+
+     
+        
     }
 
     .animals__cards :hover {
@@ -197,23 +199,19 @@ nav {
         transition: all 0.2s ease-in;
     }
 
-    .card1 {
-        grid-column-start: 2;
-        grid-row-start: 2;
-        width: 160px;
-        height: 200px;
-    }
 
-    .card2 {
-        grid-column-start: 3;
-        grid-row-start: 2;
+    
+    .animals__card-img {
+        border-radius: 20px;
+        width: 165px;
+        height: 250px;
+       
     }
-
+    
+    
     .card3 {
-        grid-column-start: 4;
-        grid-row-start: 2;
+        display: none;
     }
-
     .card4 {
         display: none;
     }
@@ -221,18 +219,18 @@ nav {
     .card5 {
         display: none;
     }
+   
 
-    .animals__card-img {
-        border-radius: 20px;
-        width: 160px;
-        height: 200px;
+    .card :hover {
+        transform: scale(1.2);
+        filter: contrast(110%) brightness(1.2) saturate(1.2);
+        transition: all 0.2s ease-in;
     }
 
     .animals__socials {
-        position: absolute;
-        width: 100px;
-        height: 107px;
-        padding-top: 180px;
+        grid-area: 5/1;
+      
+        
     }
 
     .animals__socials-list {
@@ -240,11 +238,9 @@ nav {
     }
 
     .animals__form {
-        position: relative;
-        width: 245px;
-        height: 55px;
-        justify-content: center;
-        padding-top: 40%;
+        align-self: center;
+    grid-area:3/2/3/3;
+        
     }
 
     .search-form__button {
@@ -278,6 +274,9 @@ nav {
     }
 }
 
+/*new version*/
+
+    
 /* конец ПЕРВОГО блока "Watch  your favorite animal" */
 
 /* начало ВТОРОГО блока "How it works?"  */
