@@ -45,26 +45,19 @@ nav {
 @media screen and (min-width:770px) {
     .animals {
         position: relative;
-<<<<<<< HEAD
-        /* background: url(../assets/img/jpg_rectangle_32.jpg) no-repeat center; */
-        /* background-size: cover; */
-        background-image: url(../assets/img/jpg_rectangle_32.jpg);
-        width: 1922px;
-=======
         background-image: url(/assets/img/jpg_rectangle_32.jpg);
         max-width: 1920px;
->>>>>>> 695e609e7e1928b4b8fdedbd5df3eba81517b66c
         height: 940px;
         margin: 0 auto;
         display:grid;
         box-sizing: border-box;
-        grid-template-columns:10% 20% 20% 20% 10%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns:10% 20% 30% 40%;
+        grid-template-rows: 10% 20% 10% 10% 20% 10%;
        
     }
 
     .animals__title {
-    grid-area:2/2/2/7;}
+    grid-area:1/2/2/7;}
       
 
     .animals__title-title {
@@ -76,9 +69,9 @@ nav {
     }
 
     .animals__cards {
-        grid-row: 4;
+        grid-row: 5;
         grid-column-start: 3;
-        grid-column-end: 9;
+        grid-column-end: 8;
         
     }
 
@@ -105,7 +98,7 @@ nav {
 
     .animals__socials {
 
-   grid-area: 5/1/6/2;
+   grid-area: 6/2;
         
     }
 
@@ -115,7 +108,7 @@ nav {
 
     .animals__form {
         align-self: center;
-    grid-area: 3/2;
+    grid-area: 4/2;
         
     }
 
@@ -151,20 +144,13 @@ nav {
 }
 
 
-/* адаптив для tablet */
+/* адаптив Первого блока для tablet */
 @media screen and (max-width:768px) {
 
      .animals {
         position: relative;
-<<<<<<< HEAD
-        /* background: url(../assets/img/jpg_rectangle_32.jpg) no-repeat center;
-        background-size: cover; */
-        background-image: url(../assets/img/jpg_rectangle_32.jpg);
-        /* width: 640px; */
-=======
         background-image: url(/assets/img/jpg_rectangle_32.jpg);
          max-width: 640px;
->>>>>>> 695e609e7e1928b4b8fdedbd5df3eba81517b66c
         height: 940px;
         margin: 0 auto;
         display:grid;
@@ -229,9 +215,7 @@ nav {
 
     .animals__socials {
         grid-area: 5/1;
-      
-        
-    }
+       }
 
     .animals__socials-list {
         list-style-type: none;
@@ -273,8 +257,7 @@ nav {
         text-align: center;
     }
 }
-
-/*new version*/
+/* конец адаптива для Первого блока для tablet */
 
     
 /* конец ПЕРВОГО блока "Watch  your favorite animal" */
