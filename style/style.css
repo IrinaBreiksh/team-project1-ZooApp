@@ -875,3 +875,46 @@ a {
 }
 
 /* конец ШЕСТОГО блока "Testimonials" */
+
+/* начало адаптива 6-го блока tablet */
+@media screen and (max-width: 610px) {
+    .testimonials {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "h2"
+            "feedback_1"
+            "feedback_2"
+            "leave_feedback";
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+/* начало адаптива 6-го блока tablet */
+
+/* начало адаптива 6-го блока mobile */
+@media screen and (max-width: 419px) {
+    .testimonials {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "h2"
+            "feedback_1"
+            "leave_feedback";
+        justify-items: center;
+        align-items: center;
+    }
+
+    .feedback_2 {
+        display: none;
+    }
+}
+
+/* конец адаптива 6-го блока mobile */
