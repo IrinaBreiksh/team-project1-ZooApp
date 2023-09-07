@@ -39,10 +39,10 @@ nav {
 }
 /* адаптив с бургер меню для Header */
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:720px) {
 .icon {display: none;}
 }
-@media screen and (max-width:599px){
+@media screen and (max-width:719px){
 #menu { display: none;}
 #nav-icon1 {
     width: 50px;
@@ -91,7 +91,7 @@ nav {
 
 
 /* начало ПЕРВОГО блока "Watch  your favorite animal" */
-@media screen and (min-width:720px) {
+@media screen and (min-width:620px) {
     .animals {
         position: relative;
         background-image: url(../assets/img/jpg_rectangle_32.jpg);
@@ -134,6 +134,8 @@ nav {
         width: 165px;
         height: 245px;
     }
+
+
 
     .card :hover {
         transform: scale(1.2);
@@ -185,9 +187,15 @@ nav {
     }
 }
 
+@media screen and (max-width:962px) {
+    .card4 {display: none;}}
+
+    @media screen and (max-width:719px) {
+    .card3 {display: none;}}
+
 
 /* адаптив Первого блока для tablet */
-@media screen and (max-width:719px) {
+@media screen and (max-width:619px) {
 
     .animals {
         position: relative;
@@ -241,9 +249,7 @@ nav {
         display: none;
     }
 
-    .card5 {
-        display: none;
-    }
+    
 
     .card :hover {
         transform: scale(1.2);
@@ -351,9 +357,6 @@ nav {
         display: none;
     }
 
-    .card5 {
-        display: none;
-    }
 
     .card :hover {
         transform: scale(1.2);
