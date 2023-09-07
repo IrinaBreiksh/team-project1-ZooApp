@@ -37,55 +37,71 @@ nav {
     font-weight: 900;
     text-decoration: underline;
 }
+
 /* адаптив с бургер меню для Header */
 
 @media screen and (min-width:720px) {
-.icon {display: none;}
+    .icon {
+        display: none;
+    }
 }
-@media screen and (max-width:719px){
-#menu { display: none;}
-#nav-icon1 {
-    width: 50px;
-    height: 45px;
-    position: relative;
-    justify-content: right;
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
-    cursor: pointer;
+
+@media screen and (max-width:719px) {
+    #menu {
+        display: none;
+    }
+
+    #nav-icon1 {
+        width: 50px;
+        height: 45px;
+        position: relative;
+        justify-content: right;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    #nav-icon1 span {
+        display: block;
+        position: absolute;
+        height: 9px;
+        width: 100%;
+        background: black;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+
+    #nav-icon1 span:nth-child(1) {
+        top: 0px;
+    }
+
+    #nav-icon1 span:nth-child(2) {
+        top: 18px;
+    }
+
+    #nav-icon1 span:nth-child(3) {
+        top: 36px;
+    }
+
+    #nav-icon1.open span:nth-child(1) {
+        top: 18px;
+        transform: rotate(135deg);
+    }
+
+    #nav-icon1.open span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+    }
+
+    #nav-icon1.open span:nth-child(3) {
+        top: 18px;
+        transform: rotate(-135deg);
+    }
 }
-#nav-icon1 span {
-    display: block;
-    position: absolute;
-    height: 9px;
-    width: 100%;
-    background: black;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-}
-#nav-icon1 span:nth-child(1) {
-    top: 0px;
-}
-#nav-icon1 span:nth-child(2) {
-    top: 18px;
-}
-#nav-icon1 span:nth-child(3) {
-    top: 36px;
-}
-#nav-icon1.open span:nth-child(1) {
-    top: 18px;
-    transform: rotate(135deg);
-}
-#nav-icon1.open span:nth-child(2) {
-    opacity: 0;
-    left: -60px;
-}
-#nav-icon1.open span:nth-child(3) {
-    top: 18px;
-    transform: rotate(-135deg);
-}}
+
 /* адаптив с бургер меню для Header */
 /* конец ШАПКИ header */
 
@@ -188,10 +204,16 @@ nav {
 }
 
 @media screen and (max-width:962px) {
-    .card4 {display: none;}}
+    .card4 {
+        display: none;
+    }
+}
 
-    @media screen and (max-width:719px) {
-    .card3 {display: none;}}
+@media screen and (max-width:719px) {
+    .card3 {
+        display: none;
+    }
+}
 
 
 /* адаптив Первого блока для tablet */
@@ -249,7 +271,7 @@ nav {
         display: none;
     }
 
-    
+
 
     .card :hover {
         transform: scale(1.2);
@@ -455,6 +477,8 @@ nav {
     justify-items: center;
     align-items: baseline;
     margin-bottom: 35px;
+    padding-top: 65px;
+    padding-bottom: 65px;
 }
 
 h3 {
@@ -520,15 +544,69 @@ h3 {
         align-items: center;
         margin-bottom: 35px;
         grid-row-gap: 35px;
-    }}
+    }
+}
 
-    /* конец адаптива tablet ТРЕТЬЕГО блока "What inspires us?"  */
+/* конец адаптива tablet ТРЕТЬЕГО блока "What inspires us?"  */
 
-    /* начало ЧЕТВЕРТОГО блока "Pets in ZOO" */
+/* начало ЧЕТВЕРТОГО блока "Pets in ZOO" */
+.pets_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "h2"
+        "img_container"
+        "button";
+}
+
+#title_4 {
+    grid-area: h2;
+}
+
+.img_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "img1 img2 img3 img4";
+    grid-area: img_container;
+}
+
+#img_panda {
+    grid-area: img1;
+}
+
+#img_bird {
+    grid-area: img2;
+}
+
+#img_monkey {
+    grid-area: img3;
+}
+
+#img_crocodile {
+    grid-area: img4;
+}
+
+.choose_button {
+    grid-area: button;
+}
+
+/* конец ЧЕТВЕРТОГО блока "Pets in ZOO" */
+
+/* Начало адаптива 4-го блока tablet */
+@media screen and (max-width:619px) {
     .pets_container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         justify-items: center;
@@ -539,246 +617,261 @@ h3 {
             "button";
     }
 
-    #title_4 {
-        grid-area: h2;
-    }
-
     .img_container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 0px 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "img1 img2 img3 img4";
+            "img1" "img2";
         grid-area: img_container;
-    }
-
-    #img_panda {
-        grid-area: img1;
-    }
-
-    #img_bird {
-        grid-area: img2;
     }
 
     #img_monkey {
         grid-area: img3;
+        display: none;
     }
 
     #img_crocodile {
         grid-area: img4;
+        display: none;
+    }
+}
+
+/* конец адаптива 4-го блока tablet */
+
+/* Начало адаптива 4-го блока mobile */
+
+@media screen and (max-width:419px) {
+    .img_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "img1";
+        grid-area: img_container;
     }
 
-    .choose_button {
-        grid-area: button;
+    #img_bird {
+        display: none;
     }
+}
 
-    /* конец ЧЕТВЕРТОГО блока "Pets in ZOO" */
+/* Конец адаптива 4-го блока mobile */
 
-    /* начало ПЯТОГО блока "Pay and feed" */
+/* начало ПЯТОГО блока "Pay and feed" */
+.block-pay {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.title_style {
+    color: var(--Gray-1, #333);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.txt_style {
+    color: var(--Gray-2, #4F4F4F);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.options {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.arrow {
+    width: 6em;
+    flex-shrink: 0;
+    padding: 3em;
+}
+
+.round {
+    width: 15em;
+    height: 15em;
+    flex-shrink: 0;
+}
+
+.section-button {
+    align-self: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    ;
+}
+
+.options-tablet {
+    display: none;
+}
+
+
+/* конец ПЯТОГО блока "Pay and feed"   */
+/* начало адаптива ПЯТОГО блока "Pay and feed" для tablet */
+
+@media screen and (max-width: 640px) {
     .block-pay {
         display: flex;
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
         background-color: #F2F2F2;
-    }
-
-    .title_style {
-        color: var(--Gray-1, #333);
-        text-align: center;
-        font-family: Roboto;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;
+        max-width: 640px;
+        max-height: 1393px;
     }
 
     .txt_style {
         color: var(--Gray-2, #4F4F4F);
         text-align: center;
         font-family: Roboto;
-        font-size: 14px;
+        font-size: 0.7em;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: normal;
+
     }
 
-    .options {
-        display: flex;
-        align-items: stretch;
-        justify-content: center;
-    }
-
-    .arrow {
-        width: 6em;
-        flex-shrink: 0;
+    .arrow_tablet {
+        width: 2em;
         padding: 3em;
     }
 
-    .round {
-        width: 15em;
-        height: 15em;
-        flex-shrink: 0;
+    .options {
+        display: none;
     }
 
-    .section-button {
-        align-self: center;
-        margin-top: 35px;
-        margin-bottom: 35px;
-    }
-
-    a {
-        text-decoration: none;
-        color: #FFFFFF;
-        ;
-    }
     .options-tablet {
-        display: none;}
-    
-
-    /* конец ПЯТОГО блока "Pay and feed"   */
-    /* начало адаптива ПЯТОГО блока "Pay and feed" для tablet */
-
-    @media screen and (max-width: 640px) {
-        .block-pay {
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-            justify-content: center;
-            background-color: #F2F2F2;
-            max-width: 640px;
-            max-height: 1393px;
-        }
-    
-        .txt_style {
-            color: var(--Gray-2, #4F4F4F);
-            text-align: center;
-            font-family: Roboto;
-            font-size: 0.7em;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-    
-        }
-        .arrow_tablet {
-            width: 2em;
-            padding: 3em;
-        }
-        .options {
-            display: none;
-        }
-        .options-tablet {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-    
-    }
-    
-
-    /* конец адаптива ПЯТОГО блока "Pay and feed" для tablet */
-
-
-    /* начало адаптива ПЯТОГО блока "Pay and feed" для Mobile devices */
-    @media screen and (max-width: 320px) {
-        .title_style {
-            color: var(--Gray-1, #333);
-            text-align: center;
-            font-family: Roboto;
-            font-size: 2em;
-            font-style: normal;
-            font-weight: 900;
-            line-height: normal;
-        }
-        .txt_style {
-            display: none;
-        }
-    
-    }
-    /* конец адаптива ПЯТОГО блока "Pay and feed" для Mobile devices  */
-
-    /* начало ШЕСТОГО блока "Testimonials" */
-    .testimonials__container {
-        max-width: 1198px;
-        margin: 0 auto;
-    }
-
-    .testimonials {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "h2 h2"
-            "feedback_1 feedback_2"
-            "leave_feedback leave_feedback";
-        justify-items: center;
-        align-items: center;
-    }
-
-    #title_5 {
-        grid-area: h2;
-    }
-
-    .feedback_1 {
-        grid-area: feedback_1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-    }
-
-    .feedback_1 img {
-        width: 3rem;
-    }
-
-    .feedback_2 {
-        grid-area: feedback_2;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
-    .testimonials p {
-        color: var(--Gray-2, #4F4F4F);
-        width: 27.5rem;
+}
+
+
+/* конец адаптива ПЯТОГО блока "Pay and feed" для tablet */
+
+
+/* начало адаптива ПЯТОГО блока "Pay and feed" для Mobile devices */
+@media screen and (max-width: 320px) {
+    .title_style {
+        color: var(--Gray-1, #333);
+        text-align: center;
         font-family: Roboto;
-        font-size: 0.875rem;
+        font-size: 2em;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 900;
         line-height: normal;
     }
 
-    .leave_feedback_button {
-        grid-area: leave_feedback;
+    .txt_style {
+        display: none;
     }
 
-    .search-form__button_6 {
-        width: 245px;
-        height: 55px;
-        border-radius: 3px;
-        background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
-    }
+}
 
-    .search-form__button_6:hover {
-        background: rgb(138, 196, 51);
-    }
+/* конец адаптива ПЯТОГО блока "Pay and feed" для Mobile devices  */
 
-    .feedback_1:hover {
-        border-radius: 0.3125rem;
-        background: #FEFEFE;
-        box-shadow: 2px 4px 15px 0px rgba(6, 12, 70, 0.10);
-    }
+/* начало ШЕСТОГО блока "Testimonials" */
+.testimonials__container {
+    max-width: 1198px;
+    margin: 0 auto;
+}
 
-    .feedback_2:hover {
-        border-radius: 0.3125rem;
-        background: #FEFEFE;
-        box-shadow: 2px 4px 15px 0px rgba(6, 12, 70, 0.10);
-    }
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "h2 h2"
+        "feedback_1 feedback_2"
+        "leave_feedback leave_feedback";
+    justify-items: center;
+    align-items: center;
+}
 
-    /* конец ШЕСТОГО блока "Testimonials" */
+#title_5 {
+    grid-area: h2;
+}
+
+.feedback_1 {
+    grid-area: feedback_1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback_1 img {
+    width: 3rem;
+}
+
+.feedback_2 {
+    grid-area: feedback_2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials p {
+    color: var(--Gray-2, #4F4F4F);
+    width: 27.5rem;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.leave_feedback_button {
+    grid-area: leave_feedback;
+}
+
+.search-form__button_6 {
+    width: 245px;
+    height: 55px;
+    border-radius: 3px;
+    background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
+}
+
+.search-form__button_6:hover {
+    background: rgb(138, 196, 51);
+}
+
+.feedback_1:hover {
+    border-radius: 0.3125rem;
+    background: #FEFEFE;
+    box-shadow: 2px 4px 15px 0px rgba(6, 12, 70, 0.10);
+}
+
+.feedback_2:hover {
+    border-radius: 0.3125rem;
+    background: #FEFEFE;
+    box-shadow: 2px 4px 15px 0px rgba(6, 12, 70, 0.10);
+}
+
+/* конец ШЕСТОГО блока "Testimonials" */
