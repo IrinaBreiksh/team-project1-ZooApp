@@ -5,8 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZooApp</title>
-  <link rel="stylesheet" href="style/normalize.css" />
+  <link rel="stylesheet" href="style/normalize.css" /> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <link rel="stylesheet" href="style/style.css" />
+ 
 </head>
 
 <body>
@@ -20,7 +22,21 @@
       <a id="menu" href="#"> Contact Us </a>
       <a id="menu" href="#"> Design </a>
     </nav>
-    <div></div>
+
+   <!-- начало адаптив с бургер меню -->
+    <div id="nav-icon1">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<script>
+  $(function() {
+    $('#nav-icon1').click(function(){
+        $(this).toggleClass('open');
+    });
+});
+</script> 
+ <!--  конец адаптива с бургер меню -->
   </header>
 
 
