@@ -468,7 +468,7 @@ h3 {
         align-items: center;
         margin-bottom: 35px;
         grid-row-gap: 35px;
-    }
+    }}
 
     /* конец адаптива tablet ТРЕТЬЕГО блока "What inspires us?"  */
 
@@ -582,8 +582,71 @@ h3 {
         color: #FFFFFF;
         ;
     }
+    .options-tablet {
+        display: none;}
+    
 
     /* конец ПЯТОГО блока "Pay and feed"   */
+    /* начало адаптива ПЯТОГО блока "Pay and feed" для tablet */
+
+    @media screen and (max-width: 640px) {
+        .block-pay {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            background-color: #F2F2F2;
+            max-width: 640px;
+            max-height: 1393px;
+        }
+    
+        .txt_style {
+            color: var(--Gray-2, #4F4F4F);
+            text-align: center;
+            font-family: Roboto;
+            font-size: 0.7em;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+    
+        }
+        .arrow_tablet {
+            width: 2em;
+            padding: 3em;
+        }
+        .options {
+            display: none;
+        }
+        .options-tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    
+    }
+    
+
+    /* конец адаптива ПЯТОГО блока "Pay and feed" для tablet */
+
+
+    /* начало адаптива ПЯТОГО блока "Pay and feed" для Mobile devices */
+    @media screen and (max-width: 320px) {
+        .title_style {
+            color: var(--Gray-1, #333);
+            text-align: center;
+            font-family: Roboto;
+            font-size: 2em;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+        }
+        .txt_style {
+            display: none;
+        }
+    
+    }
+    /* конец адаптива ПЯТОГО блока "Pay and feed" для Mobile devices  */
 
     /* начало ШЕСТОГО блока "Testimonials" */
     .testimonials__container {
