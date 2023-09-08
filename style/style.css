@@ -433,30 +433,46 @@ nav {
 /* конец адаптива Первого блока для Mobile devices */
 /* конец ПЕРВОГО блока "Watch  your favorite animal" */
 
-
 /* начало ВТОРОГО блока "How it works?"  */
+
 .how {
     max-width: 790px;
     margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.how_text {
+    font-size: 14px;
 }
 
 .how__title {
     text-align: center;
-    /* font-weight: 900; */
     font-size: 48px;
+    margin-top: 100px;
     margin-bottom: 35px;
 }
 
 .how__img {
-    margin-top: 35px;
+    max-width: 100%;
+    margin-top: 14px;
     margin-bottom: 35px;
 }
 
 .how__button {
     margin: 0 auto;
-    margin-bottom: 155px;
+    margin-bottom: 100px;
 }
 
+/* начало адаптива ВТОРОГО блока "How it works?" для Mobile devices */
+
+@media screen and (max-width:300px) {
+    .how__title {
+        font-size: 36px;
+    }
+}
+
+/* конец адаптива ВТОРОГО блока "How it works?" для Mobile devices */
 /* конец ВТОРОГО блока "How it works?"  */
 
 /* начало ТРЕТЬЕГО блока "What inspires us?" */
@@ -925,8 +941,9 @@ a {
     margin: 0 auto;
     text-align: center
 }
+
 #title_6 {
-   padding-top: 5rem ;
+    padding-top: 5rem;
 }
 
 /* начало СЕДЬМОГО блока "MAP" */
