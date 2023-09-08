@@ -958,7 +958,10 @@ a {
     height: 500px;
     margin: 0 auto;
     display: grid;
-    background: url(../assets/img/map.png);
+    background: url(/assets/img/map.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
     grid-template-columns: 10% 5% 5% 30% 25% 20% 1fr;
     grid-template-rows: 10% 15% 20% 3% 10% 20% 1fr;
 }
