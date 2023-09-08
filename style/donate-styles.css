@@ -2,10 +2,6 @@
 
 .donate-form {
     display: flex;
-    flex-direction: row;
-}
-
-.donate-form__container {
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
@@ -52,8 +48,8 @@ input {
 
 fieldset {
     width: 335px;
-    height: 65px;
     margin: 20px;
+    border-radius: 5px;
 }
 
 

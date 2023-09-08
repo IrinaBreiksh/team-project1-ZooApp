@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
   <header class="header__container">
     <a href="#" class="item"><img src="assets/img/logo.png" alt="logo" /></a>
     <nav class="item">
@@ -23,7 +22,8 @@
       <a id="menu" href="#"> Design </a>
     </nav>
 
-   <!-- начало адаптив с бургер меню -->
+<!-- начало адаптив с бургер меню -->
+
     <div id="nav-icon1">
     <span></span>
     <span></span>
@@ -36,13 +36,14 @@
     });
 });
 </script> 
- <!--  конец адаптива с бургер меню -->
+
+<!--  конец адаптива с бургер меню -->
+
   </header>
 
 
   <main>
-
-    <!-- начало ПЕРВОГО блока "Watch your favorite animal"-->
+<!-- начало ПЕРВОГО блока "Watch your favorite animal"-->
 
     <section class="animals">
       <div class="animals__title">
@@ -91,9 +92,9 @@
       </div>
     </section>
 
-    <!-- конец ПЕРВОГО блока "Watch your favorite animal"-->
+<!-- конец ПЕРВОГО блока "Watch your favorite animal"-->
 
-    <!-- начало ВТОРОГО блока "How it works?" -->
+<!-- начало ВТОРОГО блока "How it works?" -->
 
     <section class="how">
       <h2 class="how__title">How it works?</h2>
@@ -110,9 +111,10 @@
       </button>
     </section>
 
-    <!-- конец ВТОРОГО блока "How it works?"-->
+<!-- конец ВТОРОГО блока "How it works?"-->
 
-    <!-- начало ТРЕТЬЕГО блока "What inspires us?" -->
+<!-- начало ТРЕТЬЕГО блока "What inspires us?" -->
+
     <section class="inspiration">
       <div class="inspiration__container">
         <div class="inspiration__info">
@@ -146,9 +148,11 @@
       </div>
       </div>
     </section>
-    <!-- конец ТРЕТЬЕГО блока "What inspires us?" -->
 
-    <!-- начало ЧЕТВЕРТОГО блока "Pets in ZOO" -->
+<!-- конец ТРЕТЬЕГО блока "What inspires us?" -->
+
+<!-- начало ЧЕТВЕРТОГО блока "Pets in ZOO" -->
+
     <section class="pets_container">
       <h2 class="title_style" id="title_4">Pets in Zoo</h2>
       <div class="img_container">
@@ -163,9 +167,11 @@
         </button>
       </form>
     </section>
-    <!-- конец ЧЕТВЕРТОГО блока "Pets in ZOO" -->
 
-    <!-- начало ПЯТОГО блока "Pay and feed" -->
+<!-- конец ЧЕТВЕРТОГО блока "Pets in ZOO" -->
+
+<!-- начало ПЯТОГО блока "Pay and feed" -->
+
     <section class="block-pay">
       <div>
         <h2 class="title_style">Pay and feed</h2>
@@ -203,9 +209,10 @@
       </form>
     </section>
 
-    <!-- конец ПЯТОГО блока "Pay and feed" -->
+<!-- конец ПЯТОГО блока "Pay and feed" -->
 
-    <!-- начало ШЕСТОГО блока "Testimonials" -->
+<!-- начало ШЕСТОГО блока "Testimonials" -->
+
     <section class="testimonials__container">
       <div class="testimonials">
         <h2 id="title_5" class="title_style">Testimonials</h2>
@@ -231,9 +238,11 @@
         </form>
       </div>
     </section>
-    <!-- конец ШЕСТОГО блока "Testimonials" -->
 
-    <!-- начало СЕДЬМОГО блока "MAP" -->
+<!-- конец ШЕСТОГО блока "Testimonials" -->
+
+<!-- начало СЕДЬМОГО блока "MAP" -->
+
     <section class="map">
       <div class="map__container">
         <h2 class="title_style" id="title_6">Map</h2>
@@ -257,12 +266,74 @@
               <span class="button-text">Watch online</span>
           </button>
           </form>
-      
-    </div>
+          </div>
     </section>
-    <!-- конец СЕДЬМОГО блока "MAP" -->
 
+<!-- конец СЕДЬМОГО блока "MAP" -->
   </main>
-</body>
 
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__form">
+        <img class="logo" src="./assets/img/logo.svg.svg" alt="logo">
+        <form class="contact-us" action="#">
+          <h2 id="footer__contact">Contact us</h2>
+            <label for="yourname"></label>
+            <input type="text" placeholder="Name" id="yourname"> <br>
+            <label for="yourmale"></label>
+            <input type="email" placeholder="Email" id="yourmale">
+            <fieldset class="footer__text-area">
+              <legend>Please enter your message</legend>
+              <label for="yourmessage"></label>
+              <input type="textarea" id="yourmessage">
+            </fieldset>
+            <input type="checkbox" id="concern">
+            <label class="footercheckbox" for="concern">I agree to the processing of Personal Data</label>
+        </form>
+      </div>
+      <div class="footer__contacts">
+        <div class="footer__menu">
+          <nav class="footer__menu-items">
+            <a class="footer__menu-links" href="#">About</a>
+            <a class="footer__menu-links" href="#">Zoos</a>
+            <a class="footer__menu-links" href="#">Map</a>
+            <a class="footer__menu-links" href="#">Design</a>
+          </nav>
+          <form action="donate-form.html" target="_blank">
+            <button class="search-form__button">
+              <span class="button-text">DONATE</span>
+            </button>
+          </form>
+        </div>
+        <div class="footer__info">
+          <h2 class="footer__info-name">ZOO Online Centre</h2>
+            <address>132, Address District, Street</address>
+            <address>Open Daily 10:00 am - 5:00 pm</address>
+            <div class="footer__socials">
+              <ul  class="footer__socials-list">
+                <li>
+                  <a href="#">
+                    <img  class="footer__socials-img" src="assets/img/instagram (1).svg" alt="Instagram" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#"></a><img class="footer__socials-img" src="assets/img/twitter.svg" alt="Twitter" /></a>
+                </li>
+                <li>
+                  <a href="#"><img class="footer__socials-img" src="assets/img/youtube.svg" alt="Youtube" /></a>
+                </li>
+                <li>
+                  <a href="#"><img class="footer__socials-img" src="assets/img/vk.svg" alt="VK" /></a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p>©Noora Sagnayeva</p>
+      <p>©RSSchool and ©Yem Digital - 2021</p>
+    </div>
+  </footer>
+</body>
 </html>
