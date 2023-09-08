@@ -1060,6 +1060,10 @@ a {
     justify-content: space-between;
 }
 
+.footer__socials {
+    padding-bottom: 25px;
+}
+
 .footer__socials-list {
     display: flex;
     margin-left: -25px;
@@ -1137,9 +1141,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.footer__button {
-   position:absolute;
-   align-self: flex-end;
-}
+
 
 /* конец блока Footer */
