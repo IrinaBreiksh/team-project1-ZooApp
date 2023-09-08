@@ -946,7 +946,6 @@ a {
     text-align: center;
 
 }
-<<<<<<< HEAD
 .map-container {
     max-width: 1200px;
     height: 500px;
@@ -983,11 +982,6 @@ a {
 }
 .map__placeholder4:hover  {
    filter: contrast(110%) brightness(1.2) saturate(1.2);
-=======
-
-#title_6 {
-    padding-top: 5rem;
->>>>>>> 7bc9e14961d51bf3c7adcc2a69c200796cb1b731
 }
 
 
