@@ -918,3 +918,15 @@ a {
 }
 
 /* конец адаптива 6-го блока mobile */
+
+/* начало СЕДЬМОГО блока "MAP" */
+.map {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center
+}
+#title_6 {
+   padding-top: 5rem ;
+}
+
+/* начало СЕДЬМОГО блока "MAP" */
