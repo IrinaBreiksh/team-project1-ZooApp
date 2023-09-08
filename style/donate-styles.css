@@ -1,12 +1,28 @@
 @import url(./fonts.css);
 
 .donate-form {
+    display: flex;
+    flex-direction: row;
+    /* height: 100%; */
+}
+
+.donate-form__img {
+    /* width: 100%;
+    height: 100%; */
+}
+
+.donate-form__container {
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    justify-content: stretch;
+    /* box-sizing: border-box; */
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+.donate-form__form {
+    margin-left: 139px;
+}
+
 
 .donate-form__title {
     text-align: center;
@@ -23,11 +39,30 @@
     padding-left: 30px;
 }
 
+
+label {
+    display: none;
+}
+
+input {
+    border-color: transparent;
+    width: 80%;
+    height: 15px;
+    margin: 12px 5px;
+}
+
+#kind {
+    border-color: transparent;
+    width: 80%;
+    height: 45px;
+}
+
 fieldset {
     width: 335px;
     height: 65px;
     margin: 20px;
 }
+
 
 .donate-form__text {
     font-size: 13px;
@@ -39,4 +74,12 @@ fieldset {
 
 .donate-form__button {
     margin: 20px auto;
+}
+
+
+@media (max-width:1040px) {
+
+    .donate-form__form {
+        margin-left: 90px;
+    }
 }
