@@ -1137,6 +1137,9 @@ a:hover {
     text-decoration: underline;
 }
 
-
+.footer__button {
+   position:absolute;
+   align-self: flex-end;
+}
 
 /* конец блока Footer */
