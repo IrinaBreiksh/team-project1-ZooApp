@@ -936,69 +936,81 @@ a {
 /* конец адаптива 6-го блока mobile */
 
 /* начало СЕДЬМОГО блока "MAP" */
-.inspiration__container {
-    max-width: 1921px;
-    height: auto;
-}
-.map {
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
 
+.map {
+    background: var(--Gray-6, #F2F2F2);
 }
-.map-container {
+
+.map__container {
+    max-width: 1921px;
+    margin: 0 auto;
+}
+
+.map-area {
     max-width: 1200px;
     height: 500px;
-    margin: 50px;
+    margin: 0 auto;
     display: grid;
-    background: url(/assets/img/jpg_map.jpg);
+    background: url(../assets/img/map.png);
     grid-template-columns: 10% 5% 5% 30% 25% 20% 1fr;
-    grid-template-rows: 10% 15% 20%  3% 10% 20% 1fr;
+    grid-template-rows: 10% 15% 20% 3% 10% 20% 1fr;
 }
-.map__placeholder1 {
 
+.map__placeholder1 {
     grid-area: 3/2/2/2;
 }
+
 .map__placeholder2 {
-   grid-area: 3/4/3/4;
-    }
+    grid-area: 3/4/3/4;
+}
+
 .map__placeholder3 {
     grid-area: 4/5;
-    
+
 }
+
 .map__placeholder4 {
     grid-area: 3/6;
-    
+
 }
-.map__placeholder1:hover  {
+
+.map__placeholder1:hover {
     filter: contrast(110%) brightness(1.2) saturate(1.2);
 }
-.map__placeholder2:hover  {
-   filter: contrast(110%) brightness(1.2) saturate(1.2);
-}
-.map__placeholder3:hover  {
+
+.map__placeholder2:hover {
     filter: contrast(110%) brightness(1.2) saturate(1.2);
-   
 }
-.map__placeholder4:hover  {
-   filter: contrast(110%) brightness(1.2) saturate(1.2);
+
+.map__placeholder3:hover {
+    filter: contrast(110%) brightness(1.2) saturate(1.2);
+
+}
+
+.map__placeholder4:hover {
+    filter: contrast(110%) brightness(1.2) saturate(1.2);
 }
 
 
 #title_6 {
-   padding-top: 5rem;
+    padding-top: 5rem;
 }
-@media screen and (max-width: 1160px;) {
+
+@media screen and (max-width: 1160px; ) {
     .inspiration__container {
         max-width: 70%;
     }
-    .map-container {max-width: 70%;}
-    .map__placeholder1{
+
+    .map-container {
+        max-width: 70%;
+    }
+
+    .map__placeholder1 {
         width: 70%
     }
 
 }
-    
 
 
-/* начало СЕДЬМОГО блока "MAP" */
+
+/* конец СЕДЬМОГО блока "MAP" */
